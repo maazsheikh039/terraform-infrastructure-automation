@@ -1,0 +1,5 @@
+Lab 4: State Management with Local Backends
+Lab ID: vcs82zg8
+Created: 2026-11-14T16:20:48Z
+Backend Type: Local
+State File Location: ./state-files/terraform.tfstate

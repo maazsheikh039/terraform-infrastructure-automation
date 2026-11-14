@@ -1,0 +1,156 @@
+{
+  "version": 4,
+  "terraform_version": "1.6.6",
+  "serial": 8,
+  "lineage": "d09cf558-b0a1-33f7-6432-7eb2c8f0ee75",
+  "outputs": {
+    "additional_file": {
+      "value": "./configs/additional-vcs82zg8.json",
+      "type": "string"
+    },
+    "created_files": {
+      "value": [
+        "./configs/lab-vcs82zg8.txt",
+        "./configs/credentials-vcs82zg8.txt"
+      ],
+      "type": [
+        "tuple",
+        [
+          "string",
+          "string"
+        ]
+      ]
+    },
+    "lab_id": {
+      "value": "vcs82zg8",
+      "type": "string"
+    },
+    "state_file_path": {
+      "value": "./state-files/terraform.tfstate",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "local_file",
+      "name": "additional_config",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "content": "{\"backend\":\"local\",\"lab_id\":\"vcs82zg8\",\"lab_name\":\"State Management Lab\",\"lab_number\":4,\"timestamp\":\"2026-11-14T16:20:48Z\"}",
+            "content_base64": null,
+            "content_base64sha256": "HNEoXPucvKdZv9CiGYDrJo8CbF+ekNBsL6ICAA1pPAA=",
+            "content_base64sha512": "ws12R0rWWNd6h0EQ3n8XgiQVAXd6+64Zov7hFBBQOTXw90ux9rwZDP8T5U94CQjbkmHiDtNKd72OQydHvXd5QQ==",
+            "content_md5": "548f0949d3f605798ddce5268237b961",
+            "content_sha1": "a25f9c1a4ef214560772a338ab101e1c634a15aa",
+            "content_sha256": "1cd1285cfb9cbca759bfd0a21980eb268f026c5f9e90d06c2fa202000d693c00",
+            "content_sha512": "c2cd76474ad658d77a874110de7f1782241501777afbae19a2fee11410503935f0f74bb1f6bc190cff13e54f780908db9261e20ed34a77bd8e432747bd777941",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "./configs/additional-vcs82zg8.json",
+            "id": "a25f9c1a4ef214560772a338ab101e1c634a15aa",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_string.lab_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "local_file",
+      "name": "lab_info",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "content": "Lab 4: State Management with Local Backends\nLab ID: vcs82zg8\nCreated: 2026-11-14T16:20:48Z\nBackend Type: Local\nState File Location: ./state-files/terraform.tfstate\n",
+            "content_base64": null,
+            "content_base64sha256": "os9ua3kYM3IXXzDCVCj0x0e7qGKbnRV9nDf7llidFak=",
+            "content_base64sha512": "VLmgJZmtpzcA7qw+46GAYr5P1O8WfpdRJGsPd/bfjV22SDRWIenyujeafv4Q9b0cvC5OJGuJO8c5zsAjarDm7Q==",
+            "content_md5": "80d116d1b73166a214276a2bdab4137c",
+            "content_sha1": "01e383b46ec551e07e4217f0263a05c9bddde200",
+            "content_sha256": "a2cf6e6b79183372175f30c25428f4c747bba8629b9d157d9c37fb96589d15a9",
+            "content_sha512": "54b9a02599ada73700eeac3ee3a18062be4fd4ef167e9751246b0f77f6df8d5db648345621e9f2ba379a7efe10f5bd1cbc2e4e246b893bc739cec0236ab0e6ed",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "./configs/lab-vcs82zg8.txt",
+            "id": "01e383b46ec551e07e4217f0263a05c9bddde200",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_string.lab_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "local_sensitive_file",
+      "name": "credentials",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "content": "# Sensitive Configuration File\napi_key: secret-key-vcs82zg8\ndatabase_password: db-pass-vcs82zg8\n",
+            "content_base64": null,
+            "content_base64sha256": "3p1xrYEe+K7d6xtCBCovVF+cTFVgv38avgURO9NGDuE=",
+            "content_base64sha512": "oP5Yaz9DHs8K6IKhUi6mS78JYKarxZaKBqtAgGRdOM7SqlJrQ3xRkSjZ9tpgGMHHizafN5Kf5aJRaYlL68YbNA==",
+            "content_md5": "17744882f08f67ef7de6f4328cb756d3",
+            "content_sha1": "00c1681c84afa5c3815b9d297c8b0f07cac0cbf8",
+            "content_sha256": "de9d71ad811ef8aeddeb1b42042a2f545f9c4c5560bf7f1abe05113bd3460ee1",
+            "content_sha512": "a0fe586b3f431ecf0ae882a1522ea64bbf0960a6abc5968a06ab4080645d38ced2aa526b437c519128d9f6da6018c1c78b369f37929fe5a25169894bebc61b34",
+            "directory_permission": "0700",
+            "file_permission": "0600",
+            "filename": "./configs/credentials-vcs82zg8.txt",
+            "id": "00c1681c84afa5c3815b9d297c8b0f07cac0cbf8",
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_string.lab_id"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "random_string",
+      "name": "lab_id",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "id": "vcs82zg8",
+            "keepers": null,
+            "length": 8,
+            "lower": true,
+            "min_lower": 0,
+            "min_numeric": 0,
+            "min_special": 0,
+            "min_upper": 0,
+            "number": true,
+            "numeric": true,
+            "override_special": null,
+            "result": "vcs82zg8",
+            "special": false,
+            "upper": false
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
