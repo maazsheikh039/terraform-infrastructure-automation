@@ -1,1 +1,19 @@
+# Local .terraform directories and lock files
+.terraform/
+**/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+crash.log
+crash*log
+
+# Environment variables and credentials
 aws-credentials.sh
+bucket_info.env
+*.tfvars
+!*.tfvars.example
+
+# Local backups and temp directories
+backups/
+terraform-state-backups/
