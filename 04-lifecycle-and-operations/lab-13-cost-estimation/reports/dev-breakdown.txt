@@ -1,0 +1,35 @@
+[1mProject:[22m main
+
+ [4mName[24m                                                            [4mMonthly Qty[24m  [4mUnit[24m                    [4mMonthly Cost[24m   
+                                                                                                                     
+ [1maws_db_instance.dev_db[22m                                                                                              
+ [2m├─[22m Database instance (on-demand, Single-AZ, db.t3.micro)                730  hours                         $12.41   
+ [2m├─[22m Storage (general purpose SSD, gp2)                                    20  GB                             $2.30   
+ [2m└─[22m Extended support (year 1)                                          1,460  vCPU-hours                   $146.00   
+                                                                                                                     
+ [1maws_instance.dev_server[22m                                                                                             
+ [2m├─[22m Instance usage (Linux/UNIX, on-demand, t3.micro)                     730  hours                          $7.59   
+ [2m└─[22m root_block_device                                                                                                
+ [2m   └─[22m Storage (general purpose SSD, gp2)                                  8  GB                             $0.80   
+                                                                                                                     
+ [1maws_s3_bucket.dev_bucket[22m                                                                                            
+ [2m└─[22m Standard                                                                                                         
+ [2m   ├─[22m Storage                                             Monthly cost depends on usage: $0.023 per GB              
+ [2m   ├─[22m PUT, COPY, POST, LIST requests                      Monthly cost depends on usage: $0.005 per 1k requests     
+ [2m   ├─[22m GET, SELECT, and all other requests                 Monthly cost depends on usage: $0.0004 per 1k requests    
+ [2m   ├─[22m Select data scanned                                 Monthly cost depends on usage: $0.002 per GB              
+ [2m   └─[22m Select data returned                                Monthly cost depends on usage: $0.0007 per GB             
+                                                                                                                     
+[1m OVERALL TOTAL[22m                                                                                            $169.10 
+
+*Usage costs can be estimated by updating Infracost Cloud settings, see docs for other options.
+
+──────────────────────────────────
+3 cloud resources were detected:
+∙ 3 were estimated
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Project                                            ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━┫
+┃ main                                               ┃          $169 ┃           - ┃       $169 ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━┛

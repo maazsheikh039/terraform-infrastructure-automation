@@ -1,0 +1,19 @@
+[1mProject:[22m project_ly6yxunw
+
+[1mErrors:[22m
+  could not detect path type for './prod'
+
+  Try adding a config-file to configure how Infracost should run. See [4;1mhttps://infracost.io/config-file[24;22m for details and examples.
+
+[1m OVERALL TOTAL[22m       $0.00 
+
+*Usage costs can be estimated by updating Infracost Cloud settings, see docs for other options.
+
+──────────────────────────────────
+No cloud resources were detected
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Project                                            ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━┫
+┃ project_ly6yxunw                                   ┃         $0.00 ┃           - ┃      $0.00 ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━┛

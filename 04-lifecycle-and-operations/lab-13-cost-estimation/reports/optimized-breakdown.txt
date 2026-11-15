@@ -1,0 +1,34 @@
+[1mProject:[22m main
+
+ [4mName[24m                                                         [4mMonthly Qty[24m  [4mUnit[24m              [4mMonthly Cost[24m   
+                                                                                                            
+ [1maws_db_instance.opt_db[22m                                                                                     
+ [2m├─[22m Database instance (on-demand, Single-AZ, db.t3.small)             730  hours                   $24.82   
+ [2m├─[22m Storage (general purpose SSD, gp2)                                 50  GB                       $5.75   
+ [2m└─[22m Extended support (year 1)                                       1,460  vCPU-hours             $146.00   
+                                                                                                            
+ [1maws_autoscaling_group.opt_asg[22m                                                                              
+ [2m└─[22m aws_launch_template.opt_lt                                                                              
+ [2m   └─[22m Instance usage (Linux/UNIX, on-demand, t3.small)             1,460  hours                   $30.37   
+                                                                                                            
+ [1maws_lb.opt_alb[22m                                                                                             
+ [2m├─[22m Application load balancer                                         730  hours                   $16.43   
+ [2m└─[22m Load balancer capacity units                           Monthly cost depends on usage: $5.84 per LCU     
+                                                                                                            
+ [1maws_elasticache_replication_group.opt_cache[22m                                                                
+ [2m└─[22m ElastiCache (on-demand, cache.t3.micro)                           730  hours                   $12.41   
+                                                                                                            
+[1m OVERALL TOTAL[22m                                                                                   $235.77 
+
+*Usage costs can be estimated by updating Infracost Cloud settings, see docs for other options.
+
+──────────────────────────────────
+9 cloud resources were detected:
+∙ 4 were estimated
+∙ 5 were free
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Project                                            ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━┫
+┃ main                                               ┃          $236 ┃           - ┃       $236 ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━┛
